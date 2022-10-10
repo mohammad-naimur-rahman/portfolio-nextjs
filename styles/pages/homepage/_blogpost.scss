@@ -1,0 +1,35 @@
+.blog-post {
+  border-radius: 5px;
+  padding: 0;
+  background-color: var(--bg-profile);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  h5 {
+    color: var(--text-primary);
+    margin: 10px 0 5px 0;
+  }
+
+  .tag {
+    border-radius: 3px;
+    margin: 3px;
+    background-color: rgb(22, 39, 91);
+    color: white;
+    padding: 2px 7px;
+    font-size: 13px;
+  }
+}
