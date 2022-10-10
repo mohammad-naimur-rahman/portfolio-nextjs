@@ -1,28 +1,28 @@
 @import '~bootstrap/scss/bootstrap';
 
-@import '../src/styles/abstract/mixins';
-@import '../src/styles/abstract/variables';
+@import './styles/abstract/mixins';
+@import './styles/abstract/variables';
 
-@import '../src/styles/base/animation';
-@import '../src/styles/base/base';
-@import '../src/styles/base/typography';
+@import './styles/base/animation';
+@import './styles/base/base';
+@import './styles/base/typography';
 
-@import '../src/styles/components/components';
+@import './styles/components/components';
 
-@import '../src/styles/pages/about/about';
+@import './styles/pages/about/about';
 
-@import '../src/styles/pages/contact/contact';
+@import './styles/pages/contact/contact';
 
-@import '../src/styles/pages/homepage/blogpost';
-@import '../src/styles/pages/homepage/blogskeletion';
-@import '../src/styles/pages/homepage/footer';
-@import '../src/styles/pages/homepage/header';
-@import '../src/styles/pages/homepage/project';
-@import '../src/styles/pages/homepage/service';
+@import './styles/pages/homepage/blogpost';
+@import './styles/pages/homepage/blogskeletion';
+@import './styles/pages/homepage/footer';
+@import './styles/pages/homepage/header';
+@import './styles/pages/homepage/project';
+@import './styles/pages/homepage/service';
 
-@import '../src/styles/pages/layout/layout';
+@import './styles/pages/layout/layout';
 
-@import '../src/styles/pages/shared/permanentnav';
-@import '../src/styles/pages/shared/sidenav';
+@import './styles/pages/shared/permanentnav';
+@import './styles/pages/shared/sidenav';
 
-@import '../src/styles/pages/singleBlog.js/singleBlog';
+@import './styles/pages/singleBlog.js/singleBlog';
