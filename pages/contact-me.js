@@ -5,7 +5,6 @@ import { footerLinks } from '../components/Pages/Homepage/Footer'
 import emailjs from 'emailjs-com'
 import { motion } from 'framer-motion'
 import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
 import Layout from '../components/shared/Layout'
 
 const ContactMe = () => {
@@ -13,14 +12,21 @@ const ContactMe = () => {
     e.preventDefault()
     toast.info('Sending Feedback...')
 
-    emailjs.sendForm('service_lkvgp59', 'template_ntz2q44', e.target, 'user_J4CENgSuj5d2smzuiNUb5').then(
-      result => {
-        toast.success('Thanks for your feedback!')
-      },
-      error => {
-        console.log(error.message)
-      }
-    )
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID,
+        e.target,
+        process.env.NEXT_PUBLIC_EMAIL_USER_ID
+      )
+      .then(
+        result => {
+          toast.success('Thanks for your feedback!')
+        },
+        error => {
+          console.log(error.message)
+        }
+      )
     e.target.reset()
   }
 

@@ -1,4 +1,5 @@
 import '../globals.scss'
+import 'react-toastify/dist/ReactToastify.css'
 import { QueryClientProvider, QueryClient } from 'react-query'
 
 function MyApp({ Component, pageProps }) {
