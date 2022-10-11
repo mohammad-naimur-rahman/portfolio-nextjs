@@ -2,7 +2,7 @@ import { faFacebook, faGithub, faTwitter } from '@fortawesome/free-brands-svg-ic
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { useState } from 'react'
-import { Link } from 'next/link'
+import Link from 'next/link'
 import profile from '../../public/images/profile.jpg'
 
 const PermanentNav = () => {
@@ -49,19 +49,19 @@ const PermanentNav = () => {
           <div className='side-permanent-nav__nav'>
             <ul>
               <li onClick={() => setchecked(false)}>
-                <Link to='/'>Home</Link>
+                <Link href='/'>Home</Link>
               </li>
               <li onClick={() => setchecked(false)}>
-                <Link to='/about-me'>About Me</Link>
+                <Link href='/about-me'>About Me</Link>
               </li>
               <li onClick={() => setchecked(false)}>
-                <Link to='/projects'>My Works</Link>
+                <Link href='/projects'>My Works</Link>
               </li>
               <li onClick={() => setchecked(false)}>
-                <Link to='/blogs'>Blogs</Link>
+                <Link href='/blogs'>Blogs</Link>
               </li>
               <li onClick={() => setchecked(false)}>
-                <Link to='/contact-me'>Contact Me</Link>
+                <Link href='/contact-me'>Contact Me</Link>
               </li>
             </ul>
           </div>

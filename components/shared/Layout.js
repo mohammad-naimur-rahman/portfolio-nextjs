@@ -1,6 +1,7 @@
 import { AnimatePresence } from 'framer-motion'
 import Head from 'next/head'
 import React from 'react'
+import HomeLayout from './HomeLayout'
 import PermanentNav from './PermanentNav'
 
 const Layout = ({ children, title, head }) => {
@@ -12,7 +13,9 @@ const Layout = ({ children, title, head }) => {
       </Head>
       <main>
         <PermanentNav />
-        <AnimatePresence>{children}</AnimatePresence>
+        <AnimatePresence>
+          <HomeLayout>{children}</HomeLayout>
+        </AnimatePresence>
       </main>
     </>
   )

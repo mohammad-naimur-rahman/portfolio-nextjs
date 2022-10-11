@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "href": "/",
+    "name": "Home"
+  },
+  {
+    "id": 2,
+    "href": "/about-me",
+    "name": "About Me"
+  },
+  {
+    "id": 3,
+    "href": "/projects",
+    "name": "My Works"
+  },
+  {
+    "id": 4,
+    "href": "/blogs",
+    "name": "Blogs"
+  },
+  {
+    "id": 5,
+    "href": "/contact-me",
+    "name": "Contact Me"
+  }
+]
