@@ -67,15 +67,8 @@
 }
 
 .location {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 45%;
-    left: -60px;
-    height: 1px;
-    width: 50px;
-    background-color: currentColor;
-  }
+  height: 1px;
+  width: 50px;
+  margin-right: 10px;
+  background-color: var(--text-secondary);
 }

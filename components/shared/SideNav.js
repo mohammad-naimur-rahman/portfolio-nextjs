@@ -2,7 +2,6 @@ import { faFacebook, faGithub, faTwitter } from '@fortawesome/free-brands-svg-ic
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import Link from 'next/link'
-import profile from '../../public/images/profile.jpg'
 import { useRouter } from 'next/router'
 import navLinks from '../../data/sidenav.json'
 
@@ -13,7 +12,7 @@ const SideNav = () => {
   return (
     <div className='side-nav'>
       <div className='side-nav__profile p-2 p-md-5'>
-        <img className='side-nav__profile--img' src={profile} alt='profile' />
+        <img className='side-nav__profile--img' src='/images/profile.jpg' alt='profile' />
         <h3 className='side-nav__profile--heading secondary-color-text pt-2'>Naimur Rahman</h3>
         <p className='side-nav__profile--text secondary-color-text pt-1 pb-2'>Web Developer</p>
         <div className='side-nav__profile--social'>
@@ -44,9 +43,10 @@ const SideNav = () => {
         <ul>
           {navLinks.map(({ id, href, name }) => (
             <li key={id}>
-              <Link href={href} className={pathname === href ? 'location' : null}>
-                {name}
-              </Link>
+              <div className='d-flex align-items-center justify-content-end'>
+                {pathname === href && <div className='location'></div>}
+                <Link href={href}>{name}</Link>
+              </div>
             </li>
           ))}
         </ul>

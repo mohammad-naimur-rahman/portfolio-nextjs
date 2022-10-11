@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { useState } from 'react'
 import Link from 'next/link'
-import profile from '../../public/images/profile.jpg'
 
 const PermanentNav = () => {
   const [checked, setchecked] = useState(false)
@@ -19,7 +18,7 @@ const PermanentNav = () => {
         </label>
         <div className={`side-permanent-nav ${checked ? 'side-nav-open' : ''}`}>
           <div className='side-permanent-nav__profile p-2'>
-            <img className='side-permanent-nav__profile--img' src={profile} alt='profile' />
+            <img className='side-permanent-nav__profile--img' src='/images/profile.jpg' alt='profile' />
             <h3 className='side-permanent-nav__profile--heading secondary-color-text pt-2'>Naimur Rahman</h3>
             <p className='side-permanent-nav__profile--text secondary-color-text pt-1 pb-2'>Web Developer</p>
             <div className='side-permanent-nav__profile--social'>
